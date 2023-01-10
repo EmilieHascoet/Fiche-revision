@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(7, 7, 73);
+    font-size: 17px;
+}
+
+main {
+    margin: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+}
+
+main > * {
+    display: grid;
+    background-color: aliceblue;
+    padding: 40px;
+    border: 2px solid;
+    border-radius: 20px;
+    box-shadow: 12px 12px black;
+    box-sizing: border-box
+}
+
+main:last-child {
+    align-self: center;
+    max-height: min-content;
+}
+
+form {
+    min-width: min-content;
+}
+
+input#titre {
+    align-self: start;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+    background-color: transparent;
+    transition: all 0.3s linear;
+}
+
+input#titre:hover, input#titre:focus {
+    outline: none;
+    border-bottom: 2px solid blue;
+}
+
+[type=checkbox]{
+    margin-bottom: 10px;
+}
+
+fieldset {
+    align-self: end;
+    text-align: center;
+    margin-top: 15px;
+    border-color: blue;
+    max-height: 166px;
+}
+
+fieldset > * {
+    margin-bottom: 8px;
+}
+
+fieldset > button {
+    background-color: blue;
+    color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#moreNoteCard {
+    height: 100px;
+    width: 100px;
+    place-self: center;
+}
+
+#moreNoteCard:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
